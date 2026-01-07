@@ -70,7 +70,7 @@ print(isinstance(b, float))
 name = "Alice"
 age = 30
 print("Hello, my name is " + name + " and I am " + str(age) + " years old.")
-print("Hello, my name is {} and I am {} years old.".format(name, age))
+print("Hello, my name is {name} and I am {age} years old.".format(name=name, age=age))
 print("My name is {} and I am {} years old.".format(name, age))
 print(f"My name is {name} and I am {age} years old.")
 print("My name is %s and I am %d years old." % (name, age))
@@ -80,6 +80,8 @@ name1 = "Bob"
 name2 = "Charlie"
 print(f"{name1:<10} -first name")
 print(f"{name2:<10} -last name")
+
+
 
 
 
