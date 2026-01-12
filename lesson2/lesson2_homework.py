@@ -1,35 +1,42 @@
 # Lesson 2 Homework Solutions
+
 ### Number Data Type Questions
+
 #1. Create a program that takes a float number as input and rounds it to 2 decimal places.
 float_number = float(input("Enter a float number: "))
 rounded_number = round(float_number, 2)
-############################################################################################
-# print("Rounded number:", rounded_number)
+print("Rounded number:", rounded_number)
+
 #2. Write a Python file that asks for three numbers and outputs the largest and smallest.
 number1 = float(input("Enter first number: "))
 number2 = float(input("Enter second number: "))
 number3 = float(input("Enter third number: "))
 print("Largest number:", max(number1, number2, number3))
 print("Smallest number:", min(number1, number2, number3))
+
 #3. Create a program that converts kilometers to meters and centimeters.
 kilometers = float(input("Enter distance in kilometers: "))
 meters = kilometers * 1000
 centimeters = kilometers * 100000
 print("Distance in meters:", meters)
 print("Distance in centimeters:", centimeters)
+
 #4. Write a program that takes two numbers and prints out the result of integer division and theremainder.
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 print("Integer division result:", num1 // num2)
 print("Remainder:", num1 % num2)   
+
 #5. Make a program that converts a given Celsius temperature to Fahrenheit.
 celsius = float(input("Enter temperature in Celsius: "))
 fahrenheit = (celsius * 9/5) + 32
 print("Temperature in Fahrenheit:", fahrenheit)
+
 #6. Create a program that accepts a number and returns the last digit of that number.
 number = int(input("Enter a number: "))
 last_digit = abs(number) % 10
 print("Last digit of the number:", last_digit)
+
 #7. Create a program that takes a number and checks if it’s even or not.
 number = int(input("Enter a number: "))
 if number % 2 == 0:
@@ -44,14 +51,13 @@ else:
 
 ### String Questions:
 
-
 #1. Create a program to ask name and year of birth from user and tell them their age.
 name =input("enter your name: ")
 birth_date=int(input("please, enter your birth year: "))
 age=2026-birth_date
 print(f"your name is {name} and your age is {age}")
-#2. Extract car names from this text:
-#txt = 'LMaasleitbtui'
+
+#2. Extract car names from this text: txt = 'LMaasleitbtui'
 txt = 'LMaasleitbtui'
 car_names = txt[1::2]
 print("Extracted car names:", car_names)
@@ -64,8 +70,8 @@ user_string = input("Enter a string: ")
 print("Length of the string:", len(user_string))
 print("Uppercase:", user_string.upper())
 print("Lowercase:", user_string.lower())
-#4. Write a Python program to check if a given string is `palindrome` or not.
 
+#4. Write a Python program to check if a given string is `palindrome` or not.
 #> What is a Palindrome String? A string is called a palindrome if the reverse of the string is the same as the original one. Example: “madam”, “racecar”, “12321”.
 user_string = input("Enter a string: ")
 if user_string == user_string[::-1]:
@@ -74,7 +80,6 @@ else:
     print("The string is not a palindrome.")
 
 #5. Write a program that counts the number of vowels and consonants in a given string.
-
 user_string = input("Enter a string: ")
 vowels = "aeiouAEIOU"
 vowel_count = 0
@@ -89,7 +94,6 @@ print("Number of vowels:", vowel_count)
 print("Number of consonants:", consonant_count)
 
 #6. Write a Python program to check if one string contains another.
-
 user_string = input("Enter a string: ")
 word = input("Enter a word to check: ")
 if word in user_string:
@@ -109,7 +113,6 @@ replacement_word = input("Enter the replacement word: ")
 new_sentence = sentence.replace(word_to_replace, replacement_word)
 print("Modified sentence:", new_sentence)
 
-
 #8. Write a program that asks the user for a string and prints the first and last characters of the string.  
 user_string = input("Enter a string: ")
 if len(user_string) > 0:
@@ -120,6 +123,7 @@ if len(user_string) > 0:
 user_string = input("Enter a string: ")
 reversed_string = user_string[::-1]
 print("Reversed string:", reversed_string)
+
 #10. Write a program that asks the user for a sentence and prints the number of words in it. 
 user_sentence = input("Enter a sentence: ") 
 words = user_sentence.split()
@@ -132,8 +136,6 @@ if contains_digit:
     print("The string contains digits.")
 else:
     print("The string does not contain any digits.")
-    
-
 
 #12. Write a program that takes a list of words and joins them into a single string, separated by a character (e.g., `-` or `,`).  
 words = input("Enter words separated by spaces: ").split()
@@ -144,6 +146,7 @@ print("Joined string:", joined_string)
 #13. Ask the user for a string and remove all spaces from it.  
 user_string = input("Enter a string: ")
 string_without_spaces = user_string.replace(" ", "")
+print("String without spaces:", string_without_spaces)
 
 #14. Write a program to ask for two strings and check if they are equal or not.  
 string1 = input("Enter the first string: ")
@@ -241,13 +244,15 @@ if number % 3 == 0 and number % 5 == 0:
 else:
     print("The number is not divisible by both 3 and 5.")
     
-#7. Write a program that checks if the sum of two numbers is greater than 50.8. Create a program that checks if a given number is between 10 and 20 (inclusive)
+#7. Write a program that checks if the sum of two numbers is greater than 50.8.
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 if (num1 + num2) > 50.8:
     print("The sum of the numbers is greater than 50.8.")
 else:
     print("The sum of the numbers is not greater than 50.8.")
+
+#8 Create a program that checks if a given number is between 10 and 20 (inclusive)
 number = float(input("Enter a number: "))
 if 10 <= number <= 20:
     print("The number is between 10 and 20 (inclusive).")
