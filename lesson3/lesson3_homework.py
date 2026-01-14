@@ -3,7 +3,6 @@
 #1. **Count Occurrences**: Given a list and an element, find how many times the element appears in the list.
 from timeit import repeat
 
-
 user_list = input("Enter list elements separated by space: ").split()
 element = input("Enter the element to count: ")
 count = user_list.count(element)
@@ -12,7 +11,7 @@ print(f"The element '{element}' appears {count} time(s) in the list.")
 #2. **Sum of Elements**: Given a list of numbers, calculate the total of all the elements.
 numbers = input("Enter numbers separated by space: ").split()
 numbers = [float(num) for num in numbers]
-total = sum(numbers)
+total = sum(numbers) 
 print("Sum of elements:", total)
 
 #3. **Max Element**: From a given list, determine the largest element.
@@ -22,7 +21,7 @@ print("Maximum element:", max_element)
 #4. **Min Element**: From a given list, determine the smallest element.
 min_element = min(numbers)
 print("Minimum element:", min_element)
-
+  
 #5. **Check Element**: Given a list and an element, check if the element is present in the list.
 check_element = input("Enter the element to check: ")
 if check_element in user_list:
@@ -68,10 +67,7 @@ try:
     print(f"The index of the first occurrence of '{check_element}' is: {element_index}")
 except ValueError:
     print(f"The element '{check_element}' is not found in the list.")
-
-#14. **Check for Empty List**: Determine if a list is empty and return a boolean.
-is_empty = len(user_list) == 0
-print("Is the list empty?", is_empty)
+ 
 
 #15. **Count Even Numbers**: Given a list of integers, count how many of them are even.
 even_count = sum(1 for num in numbers if int(num) % 2 == 0)
@@ -88,6 +84,7 @@ print("Concatenated list:", concatenated_list)
 
 #18. **Find Sublist**: Given a list and a sublist, check if the sublist exists within the list.
 sublist = input("Enter elements of the sublist separated by space: ").split()
+user_list = input("Enter elements of the main list separated by space: ").split()
 def is_sublist(main_list, sub_list):
     sub_len = len(sub_list)
     for i in range(len(main_list) - sub_len + 1):
@@ -97,7 +94,7 @@ def is_sublist(main_list, sub_list):
 if is_sublist(user_list, sublist):
     print("The sublist exists within the list.")
 
-#19. **Replace Element**: Given a list, replace the first occurrence of a specified element with another element.
+#19. **Replace Element**: Given a list, replace the first    occurrence of a specified element with another element.
 old_element = input("Enter the element to replace: ")
 new_element = input("Enter the new element: ")
 try:
@@ -119,7 +116,7 @@ else:
 #21. **Find Second Smallest**: From a given list, find the second smallest element.
 if len(unique_numbers) >= 2:
     unique_numbers.sort()
-    second_smallest = unique_numbers[1]
+    second_smallest = unique_numbers[1] 
     print("Second smallest element:", second_smallest)
 else:
     print("Not enough unique elements to determine the second smallest.")
@@ -132,7 +129,7 @@ print("List of even numbers:", even_numbers)
 odd_numbers = [num for num in numbers if int(num) % 2 != 0]
 print("List of odd numbers:", odd_numbers)
 
-#24. **List Length**: Determine the number of elements in the list.
+#24. **List Length**: Determine the number of elements in the list.  
 list_length = len(user_list)
 print("Length of the list:", list_length)
 
