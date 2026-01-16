@@ -466,21 +466,22 @@ random_set = {random.randint(1, 100) for _ in range(num_elements)}
 print("Random set of integers:", random_set)
 ####################################################################################################################
 ####################################################################################################################
+####################################################################################################################
 
 
 
 ### Dictionary Tasks
 
-#1. **Get Value**: Given a dictionary and a key, retrieve the associated value, considering what to return if the key doesn’t exist.
+#1. **Get Value**: Given a dictionary and a key, retrieve the associated value, 
+# considering what to return if the key doesn’t exist.
 user_dict = {}
 key = input("Enter the key to retrieve its value: ")
 value = user_dict.get(key, "Key not found.")
 print(f"Value for key '{key}':", value)
-
 #2. **Check Key**: Given a dictionary and a key, check if the key is present in the dictionary.
 key_to_check = input("Enter the key to check: ")
 if key_to_check in user_dict:
-    print(f"The key '{key_to_check}' is present in the dictionary.")
+    print(f"The key '{key_to_check}' is present in the dictionary.") 
 else:
     print(f"The key '{key_to_check}' is not present in the dictionary.")
 
