@@ -132,8 +132,7 @@ with open("tasks.json", "r") as f:
 for t in tasks:
     print(t["id"], t["task"], t["completed"], t["priority"])
 
-# Task statistics function
-def task_stats(tasks):
+# Task statistics function56euihj20.3_stats(tasks):
     total = len(tasks)
     completed = sum(t["completed"] for t in tasks)
     pending = total - completed
