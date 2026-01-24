@@ -1,6 +1,7 @@
 ### Zero Check Decorator
 
-#Write a decorator function called `check` that verifies that the denominator is not equal to 0 and apply it to the following function:
+#Write a decorator function called `check`
+#  that verifies that the denominator is not equal to 0 and apply it to the following function:
 
 #python
 #@check
