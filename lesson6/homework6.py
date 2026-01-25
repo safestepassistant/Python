@@ -1,7 +1,8 @@
 ### Zero Check Decorator
 
 #Write a decorator function called `check`
-#  that verifies that the denominator is not equal to 0 and apply it to the following function:
+#  that verifies that the denominator is not equal to 0 
+# and apply it to the following function:
 
 #python
 #@check
@@ -39,7 +40,8 @@ def div(a, b):
 #**Tasks**:  
 #1. **File Creation and Data Entry**  
  #  - Create a file named **"employees.txt"**.  
-  # - Allow the user to add new employee records. Each record should have the following fields:  
+  # - Allow the user to add new employee records.
+  #  Each record should have the following fields:  
    #  
     # Employee ID, Name, Position, Salary
      
