@@ -1,0 +1,11 @@
+student_id,name,age,city,math_score,english_score,passed
+101,Ali,18,Tashkent,88,91,True
+102,Zarina,19,Samarkand,92,85,True
+103,Bekzod,18,Andijan,75,79,True
+104,Madina,20,Bukhara,81,88,True
+105,Jasmin,19,Namangan,95,93,True
+106,Sardor,21,Fergana,67,70,False
+107,Laylo,18,Tashkent,90,86,True
+108,Kamol,22,Khiva,73,76,True
+109,Dilnoza,20,Nukus,85,84,True
+110,Rustam,19,Samarkand,78,80,True
