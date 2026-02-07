@@ -12,7 +12,7 @@ plt.figure()
 plt.plot(x, y)
 plt.xlabel("x")
 plt.ylabel("f(x)")
-plt.title("Plot of f(x) = x² - 4x + 4")
+plt.title("Plot of f(x) = x² - 4x + 4")   
 plt.grid(True)
 plt.show()
 
