@@ -39,8 +39,10 @@
 # -----------------------------------------------------------------------------------------------------
 
 # Given a string consisting of N pairwise distinct characters, output all the permutations of the characters of this string.
-# The first line of input contains a string consisting of N characters (1 ≤ N ≤ 8), the characters are letters of the English alphabet and decimal digits.
-# Output all permutations of the string, one per line. Output the permutations in any order. Do not output one permutation several times and do not output strings that are not permutations of the string in the input.
+# The first line of input contains a string consisting of N characters (1 ≤ N ≤ 8),
+#  the characters are letters of the English alphabet and decimal digits.
+# Output all permutations of the string, one per line. Output the permutations in any order.
+#  Do not output one permutation several times and do not output strings that are not permutations of the string in the input.
 # Example: 
 # Input: abc
 # Output:
@@ -50,3 +52,4 @@
 # bca
 # cab
 # cba
+
